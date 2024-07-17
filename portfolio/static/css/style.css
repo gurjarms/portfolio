@@ -397,7 +397,7 @@ nav.navbar.bootsnav .navbar-toggle i {
 
 .single-about-img img {
     width: 400px;
-    max-height: 500px;
+    height: 450px;
 }
 
 .about-list-icon {
@@ -407,19 +407,19 @@ nav.navbar.bootsnav .navbar-toggle i {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 400px;
+    width: 200px;
     height: 90px;
-    background: #1f2c6c;
 }
 
 /*.ab-list-icon */
 .about-list-icon ul {
     display: flex;
+    margin-left: 20%;
 }
 
 .about-list-icon ul li a {
     padding-right: 22px;
-    color: #fff;
+    color: #ffffff;
 }
 
 .about-list-icon ul li a {
@@ -732,16 +732,6 @@ span.single-timeline-horizontal.spacial-horizontal-line {
     transition: background 0.5s linear;
 }
 
-.single-project-img {
-    position: relative;
-}
-
-.single-project-img:before {
-    position: absolute;
-    content: " ";
-    top: 0;
-    left: 0;
-}
 
 /*.isotope-overlay*/
 

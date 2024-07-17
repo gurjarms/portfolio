@@ -109,7 +109,7 @@
 							<div class="header-text">
 								<h2>hi <span>,</span> i am <br> Mahendra Singh .<span>.</span> </h2>
 								<p>Python developer</p>
-								<a href="assets/download/browney.txt" download>download resume</a>
+								<a href="{% static 'pdf/pr-resume.pdf' %}" download>download resume</a>
 							</div><!--/.header-text-->
 						</div><!--/.col-->
 					</div><!-- /.row-->
@@ -154,8 +154,8 @@
 										</div>
 										<div class="col-sm-4">
 											<div class="single-about-add-info">
-												<h3>website</h3>
-												<p>........................................</p>
+												<h3>Github </h3>
+												<a target="_blank" href="https://github.com/gurjarms">https://github.com/gurjarms</a>
 											</div>
 										</div>
 									</div>
@@ -167,29 +167,24 @@
 									<div class="about-list-icon">
 										<ul>
 											<li>
-												<a href="#">
-													<i class="fa fa-facebook" aria-hidden="true"></i>
-												</a>
-											</li><!-- / li -->
-											<li>
-												<a href="#">
-													<i class="fa fa-dribbble" aria-hidden="true"></i>
+												<a target="_blank" href="https://github.com/gurjarms">
+													<i class="fa fa-github" aria-hidden="true"></i>
 												</a>
 
 											</li><!-- / li -->
 											<li>
-												<a href="#">
-													<i class="fa fa-twitter" aria-hidden="true"></i>
+												<a target="_blank" href="https://x.com/GurjarMs33">
+													<i class="fa fa-xing" aria-hidden="true"></i>
 												</a>
 
 											</li><!-- / li -->
 											<li>
-												<a href="#">
+												<a target="_blank" href="https://www.linkedin.com/in/mahendra-singh-50207a224">
 													<i class="fa fa-linkedin" aria-hidden="true"></i>
 												</a>
 											</li><!-- / li -->
 											<li>
-												<a href="#">
+												<a target="_blank" href="https://www.instagram.com/er._veer_gurjar?igsh=dTRldHJhbXJwN2R5 ">
 													<i class="fa fa-instagram" aria-hidden="true"></i>
 												</a>
 											</li><!-- / li -->
@@ -519,18 +514,15 @@
 				<div class="section-heading text-center">
 					<h2>Projects</h2>
 				</div>
-				<div class="container-fluid">
-					<div class="row projects-content">
-						<div class="col-sm-5 img">
-							<div class="single-project-img">
-								<img src="{% static 'images\about\bulk-mail-sender.png' %}" alt="">
-
-							</div>
-							<div class="single-project">
-
-							</div>
+				<div class="container m-3">
+					<div class="row pt-3">
+						<div class="col  col-lg-5">
+							<a href="{% static 'images\about\bulk-mail-sender.png' %}">
+								<img src="{% static 'images\about\bulk-mail-sender.png' %}" alt=" Bulk Mail Sender">
+							</a>
 						</div>
-						<div class="col-sm-7">
+						<div class="col col-lg-1"></div>
+						<div class="col-lg-6 ">
 							<h1 style="font-size: 22px; font-weight:bold;">
 								Bulk Mail Sender
 							</h1>
@@ -560,12 +552,16 @@
 								</li>
 							</ol>
 						</div>
+
 					</div>
-					<div class="row projects-content">
-						<h1 style="font-size: 22px; font-weight:bold;">
-							Compare-ON
-						</h1>
-						<div class="col-sm-7 img">
+					<br>
+					<hr style="background-color: gray; border:0.5px solid gray">
+					<br>
+					<div class="row p-5">
+						<div class="col col-lg-7 ">
+							<h1 style="font-size: 22px; font-weight:bold;">
+								Compare-ON
+							</h1>
 
 							<ol style="font-size: 14px; line-height:2;" type="1">
 								<li>
@@ -595,29 +591,24 @@
 									</ol>
 								</li>
 							</ol>
-							<div class="single-project">
-
-							</div>
 						</div>
-						<div class="col-sm-5 border ">
-							<div class="single-project-img">
-								<img style="border: 1px solid gray;" src="{% static 'images\about\compareOn.png' %}" alt="">
-
-							</div>
-
-
+						<div class="col col-lg-5 border ">
+							<a href="{% static 'images\about\compareOn.png' %}">
+								<img style="border: 1px solid gray;" src="{% static 'images\about\compareOn.png' %}" alt="CompareOn">
+							</a>
 						</div>
+
 					</div>
-					<div class="row projects-content">
-						<div class="col-sm-5 img">
-							<div class="single-project-img">
-								<img src="{% static 'images\about\crime-report.png' %}" alt="">
-
-							</div>
-							<div class="single-project">
-
-							</div>
+					<br>
+					<hr style="background-color: gray; border:0.5px solid gray">
+					<br>
+					<div class="row">
+						<div class="col col-lg-5 ">
+							<a href="{% static 'images\about\crime-report.png' %}">
+								<img src="{% static 'images\about\crime-report.png' %}" alt=" Crime Report">
+							</a>
 						</div>
+
 						<div class="col-sm-7">
 							<h1 style="font-size: 22px; font-weight:bold;">
 								Online Crime Report
@@ -650,12 +641,30 @@
 						</div>
 					</div>
 				</div>
+
+
+
+				<!-- <div class="container-fluid">
+					<div class="row projects-content">
+						
+						
+					</div>
+					<div class="row projects-content">
+						
+						
+						
+					</div>
+					<div class="row projects-content">
+						
+						
+					</div>
+				</div> -->
 			</div>
 
 		</section><!--/.profiles-->
 		<!--projects end -->
 
-		<!--portfolio start -->
+		<!--services start -->
 		<section id="services" class="services">
 			<div class="services-details">
 				<div class="section-heading text-center">
@@ -666,7 +675,7 @@
 						<div class="col-md-4 col-sm-6">
 							<div class="serviceBox">
 								<div class="service-icon">
-									<span><i class="fa fa-stack"></i></span>
+									<span><i class="fa fa-connectdevelop"></i></span>
 								</div>
 								<h3 class="title">Full Stack Web Development</h3>
 								<p class="description">I build responsive and dynamic websites using modern technologies like HTML, CSS, JavaScript, and frameworks such as Django and Node.js. From front-end to back-end, I deliver comprehensive web solutions.</p>
@@ -706,10 +715,10 @@
 
 					</div>
 				</div>
-			</div><!--/.portfolio-details-->
+			</div><!--/.services-details-->
 
-		</section><!--/.portfolio-->
-		<!--portfolio end -->
+		</section><!--/.services-->
+		<!--services end -->
 
 
 		<!--contact start -->
@@ -787,11 +796,11 @@
 										</div>
 										<div class="single-contact-add-info">
 											<h3>email</h3>
-											<p>gurjarmahisingh33</p>
+											<p>gurjarmahisingh33@gmail.com</p>
 										</div>
 										<div class="single-contact-add-info">
 											<h3>website</h3>
-											<p>www.brownsine.com</p>
+											<p>http://msgurjar.pythonanywhere.com</p>
 										</div>
 									</div>
 								</div><!--/.contact-adress-->

@@ -28,6 +28,9 @@ def contact(request):
         email = request.POST['email']
         subject = request.POST['subject']
         message = request.POST['message']
+        if form.is_valid(): 
+
+            form.save()
         msg = f'''Feedback from: {name}
 Subject: {subject}
 User contact: {email}
